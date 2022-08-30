@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="364021da-71d5-4763-bb2b-975ff3528a2d" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="notebook shop" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2DTy9wUQptIgppixJJhBEm3rl33" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Desktop\ahm doc\my websites\js projects\Node, Express, Mongo\Loyiha\notebook shop\data" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Node.js.Unnamed">
+    <configuration name="notebooks.js" type="MongoRunConfiguration" factoryName="Mongo" temporary="true">
+      <module name="notebook shop" />
+      <setting name="path" value="$PROJECT_DIR$/routes/notebooks.js" />
+      <setting name="shellParams" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="NodeJSConfigurationType" nameIsGenerated="true" working-dir="$PROJECT_DIR$">
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.dev" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="364021da-71d5-4763-bb2b-975ff3528a2d" name="Default Changelist" comment="" />
+      <created>1660737220961</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660737220961</updated>
+      <workItem from="1660737222975" duration="2038000" />
+      <workItem from="1660739953955" duration="6342000" />
+      <workItem from="1660803235024" duration="16772000" />
+      <workItem from="1660841894155" duration="4839000" />
+      <workItem from="1661157947141" duration="3319000" />
+      <workItem from="1661421179012" duration="6320000" />
+      <workItem from="1661441130480" duration="8266000" />
+      <workItem from="1661500104169" duration="2491000" />
+      <workItem from="1661515618371" duration="4470000" />
+      <workItem from="1661533644368" duration="4244000" />
+      <workItem from="1661684973341" duration="7891000" />
+      <workItem from="1661700871201" duration="5942000" />
+      <workItem from="1661755837687" duration="1760000" />
+      <workItem from="1661768148942" duration="2075000" />
+      <workItem from="1661773866065" duration="113000" />
+      <workItem from="1661773990846" duration="560000" />
+      <workItem from="1661787441703" duration="11000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

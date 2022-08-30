@@ -1,0 +1,34 @@
+<h1>Edit Notebook {{notebook.title}} </h1>
+
+<form action="/notebooks/edit" method="POST" class="container z-depth-4 f_control">
+    <div class="input-field  ">
+        <input id="title" name="title" type="text" class="validate" value="{{notebook.title}}" required/>
+        <label for="title">Notebooks Model</label>
+        <span class="helper-text" data-error="Notebooks Name"></span>
+    </div>
+
+
+    <div class="input-field">
+        <input value="{{notebook.price}}" id="price" name="price" type="number" class="validate" required min="1" />
+        <label for="price">Price</label>
+        <span class="helper-text" data-error="Price"></span>
+    </div>
+    <div class="input-field">
+        <input id="img" name="img" value="{{notebook.img}}" type="text" class="validate" required />
+        <label for="img">Url Image</label>
+        <span class="helper-text" data-error="URL Image"></span>
+
+    </div>
+    <div class="input-field col s12">
+        <input value="{{notebook.descr}}" id="descr" name="descr" class="materialize-textarea validate" required/>
+        <span class="helper-text" data-error="Enter Describtion"></span>
+
+    </div>
+    <input type="hidden" name="id" value="{{notebook.id}}"/>
+    <button class="btn btn-primary">Edit Notebook</button>
+</form>
+
+<form action="/notebooks/remove" class="container" method="POST">
+    <input type="hidden" name="id" value="{{notebook.id}}"/>
+    <button class="btn red mt-2">Remove</button>
+</form>
