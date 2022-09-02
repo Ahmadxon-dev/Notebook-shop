@@ -10,7 +10,7 @@ const notebooksRouter = require('./routes/notebooks');
 const addRouter = require('./routes/add');
 const cardRoutes = require('./routes/card');
 const User  = require('./models/user');
-
+const ordersRoutes = require('./routes/orders')
 app.use(express.static('public'));
 const hbs = exphbs.create({
     defaultLayout: 'main',
@@ -35,7 +35,7 @@ app.use('/', homerouter);
 app.use('/notebooks', notebooksRouter);
 app.use('/add', addRouter);
 app.use('/card', cardRoutes);
-
+app.use('/orders', ordersRoutes)
 const password = 'HM7aSEx4MZnpYrKH';
 
 async function start() {

@@ -26,6 +26,10 @@
             </tbody>
         </table>
         <h5><b>Price: </b><span class="price">{{price}}</span></h5>
+
+        <form action="/orders" method="POST">
+            <button type="submit" class="btn">Order</button>
+        </form>
     {{else}}
         <div class="mt-100">
             <div class="row bascket">
