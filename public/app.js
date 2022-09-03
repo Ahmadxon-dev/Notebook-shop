@@ -1,30 +1,44 @@
 const toCurrency = (price) => {
-    return new Intl.NumberFormat("us-US", {
-        currency: "usd",
-        style: "currency",
-    }).format(price);
+  return new Intl.NumberFormat("us-US", {
+    currency: "usd",
+    style: "currency",
+  }).format(price);
+};
+
+const toDate = (date) => {
+  return new Intl.DateTimeFormat("us-US", {
+    day: "2-digit",
+    month: "long",
+    year: "numeric",
+    hour: "2-digit",
+    minute: "2-digit",
+    second: "2-digit",
+  }).format(new Date(date));
 };
 
 document.querySelectorAll(".price").forEach((c) => {
-    c.textContent = toCurrency(c.textContent);
+  c.textContent = toCurrency(c.textContent);
 });
 
+document.querySelectorAll(".data").forEach((s) => {
+  s.textContent = toDate(s.textContent);
+});
 
 const $card = document.querySelector("#card");
 if ($card) {
-    $card.addEventListener("click", (e) => {
-        if (e.target.classList.contains("js-remove")) {
-            const id = e.target.dataset.id;
+  $card.addEventListener("click", (e) => {
+    if (e.target.classList.contains("js-remove")) {
+      const id = e.target.dataset.id;
 
-            fetch("/card/remove/" + id, {
-                method: "delete",
-            })
-                .then((res) => res.json())
-                .then((card) => {
-                    if (card.notebooks.length) {
-                        const dynamicHtml = card.notebooks
-                            .map((c) => {
-                                return `
+      fetch("/card/remove/" + id, {
+        method: "delete",
+      })
+        .then((res) => res.json())
+        .then((card) => {
+          if (card.notebooks.length) {
+            const dynamicHtml = card.notebooks
+              .map((c) => {
+                return `
                 <tr>
                   <td>${c.title}</td>
                   <td>${c.count}</td>
@@ -33,12 +47,12 @@ if ($card) {
                   </td>
                 </tr>
               `;
-                            })
-                            .join("");
-                        $card.querySelector("tbody").innerHTML = dynamicHtml;
-                        $card.querySelector(".price").textContent = toCurrency(card.price);
-                    } else {
-                        $card.innerHTML = `
+              })
+              .join("");
+            $card.querySelector("tbody").innerHTML = dynamicHtml;
+            $card.querySelector(".price").textContent = toCurrency(card.price);
+          } else {
+            $card.innerHTML = `
               <div class="mt-100">
                 <div class="row bascket">
                   <div class="col-md-12">
@@ -65,8 +79,11 @@ if ($card) {
                 </div>
               </div>
             `;
-                    }
-                });
-        }
-    });
+          }
+        });
+    }
+  });
 }
+
+
+M.Tabs.init(document.querySelectorAll('.tabs'));
